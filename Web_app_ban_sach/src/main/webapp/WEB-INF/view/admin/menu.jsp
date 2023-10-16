@@ -31,8 +31,8 @@
             </a>
             <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="charts-chartjs.html">
-                        <i class="bi bi-circle"></i><span>Chart.js</span>
+                    <a href="/admin/product">
+                        <i class="bi bi-circle"></i><span>Chi Tiết Sản Phẩm</span>
                     </a>
                 </li>
                 <li>
