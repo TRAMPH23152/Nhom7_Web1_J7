@@ -26,59 +26,7 @@ public class HomeController {
         return "/admin/index";
     }
 
-    @GetMapping("/home")
-    public String home(Model model) {
-        model.addAttribute("view", "../admin/dashboard/index.jsp");
-        return "/admin/index";
-    }
-
-    @GetMapping("/bill")
-    public String bill(Model model) {
-        model.addAttribute("view", "../admin/hoadon/index.jsp");
-        return "/admin/index";
-    }
-
-//    @GetMapping("/product")
-//    public String product(Model model){
-//        model.addAttribute("view","../admin/product/ctsp.jsp");
-//        return "/admin/index";
-//    }
-
-    @Autowired
-    private BiaService biaService;
-    @Autowired
-    private NXBService nxbService;
-    @Autowired
-    private SachService sachService;
-    @Autowired
-    private TacGiaService tacGiaService;
-    @Autowired
-    private TheLoaiServicce theLoaiServicce;
-    @Autowired
-    private CTSPService ctspService;
 
 
-    @GetMapping("/product")
-    public String productView(Model model, @ModelAttribute("model_ctsp") CTSP ctsp) {
-
-        model.addAttribute("ctsp", ctspService.getAll());
-
-        model.addAttribute("items_bia", biaService.getAll());
-
-        model.addAttribute("items_sach", sachService.getAll());
-
-        model.addAttribute("items_tg", tacGiaService.getAll());
-
-        model.addAttribute("items_nxb", nxbService.getAll());
-
-        model.addAttribute("items_tl", theLoaiServicce.getAll());
-
-        model.addAttribute("model_ctsp", new CTSP());
-
-        model.addAttribute("view", "../admin/product/ctsp.jsp");
-
-        return "/admin/index";
-
-    }
 
 }

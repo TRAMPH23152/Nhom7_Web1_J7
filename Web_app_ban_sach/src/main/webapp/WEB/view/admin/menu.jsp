@@ -31,13 +31,13 @@
             </a>
             <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="/admin/product">
+                    <a href="/product">
                         <i class="bi bi-circle"></i><span>Chi Tiết Sản Phẩm</span>
                     </a>
                 </li>
                 <li>
-                    <a href="charts-apexcharts.html">
-                        <i class="bi bi-circle"></i><span>ApexCharts</span>
+                    <a href="">
+                        <i class="bi bi-circle"></i><span>Detail</span>
                     </a>
                 </li>
                 <li>

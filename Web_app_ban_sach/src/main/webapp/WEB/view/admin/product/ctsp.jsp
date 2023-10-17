@@ -128,11 +128,11 @@
                                 <td>${c.trangThai==1?"Đang Bán":"Ngừng Bán"}</td>
                                 <td>
                                     <div class="d-flex justify-content-center action-buttons">
-                                        <a href="/ctsp/view-update/${c.id}"
+                                        <a href="/product/view-update/${c.id}"
                                            onclick="return confirm('Bạn có muốn update sách này không?')">
                                             <i class="icon bx  bxs-edit px-1"></i>
                                         </a>
-                                        <a href="/ctsp/remove/${c.id}">
+                                        <a href="/product/detail/${c.id}">
                                             <i class="icon bx bxs-show px-3"></i>
                                         </a>
                                     </div>
